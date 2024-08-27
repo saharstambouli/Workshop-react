@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import NewComponent from './NewComponent';
+import NavBar from './NavBar';
+import HtmlToJsx from './HtmlToJsx';
+import Images from './Images';
+import ProductCard from './ProductCard';
+import FromTabler from './FromTabler';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="">
+       <NavBar/>
+      <header className="">
+        {/* convert html code to jsx  */}
+        <HtmlToJsx/>
+
+
+        <Images/>
+
+        <ProductCard/>
+
+        <FromTabler/>
       </header>
+
+      
     </div>
   );
 }
